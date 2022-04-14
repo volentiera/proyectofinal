@@ -1,0 +1,267 @@
+/* reset */
+*{
+	margin: 0;
+	padding: 0;
+}
+/* reset */
+
+/* fondo */
+.background{
+    background-color: palegreen;
+}
+/* fondo */
+
+/* inicio index */
+.index__gridlayout {  
+    display: grid;
+    grid-template-columns: 0.3fr 2.4fr 0.3fr;
+    grid-template-rows: 0.4fr 1.6fr 1.6fr 0.4fr;
+    gap: 5px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "index__header index__header index__header"
+    ". index__content ."
+    ". index__content2 ."
+    "index__footer index__footer index__footer";
+    height: 1200px;
+}
+
+/* inicio index header */
+
+.index__header { 
+    grid-area: index__header;
+    background-color: black;
+}
+
+/* fin index header */
+
+/* inicio index content */
+
+.index__content {  
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    grid-template-rows: 1fr;
+    gap: 16px 16px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "index__content--texto index__content--video";
+    grid-area: index__content;
+}
+
+.index__content--video { 
+    background-color: chartreuse;
+    grid-area: index__content--video;
+}
+
+.index__content--texto { 
+    background-color: darkmagenta;
+    grid-area: index__content--texto;
+}
+
+.index__content2 {  
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    grid-template-rows: 1fr;
+    gap: 16px 16px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "index__content2--img index__content2--texto";
+    grid-area: index__content2;
+}
+
+.index__content2--img {
+    grid-area: index__content2--img;
+    background-color: gold;
+}
+
+.index__content2--texto {
+    background-color: lavender;
+    grid-area: index__content2--texto;
+}
+
+/* fin index content */
+
+/* inicio index footer */
+
+.index__footer {
+    background-color: lightslategrey;
+    grid-area: index__footer;
+}
+
+/* fin index footer */
+
+/* fin index */
+
+
+/* inicio galeria */
+
+.galeria__gridlayout {  
+    display: grid;
+    grid-template-columns: 0.3fr 2.4fr 0.3fr;
+    grid-template-rows: 0.3fr 2.4fr 0.3fr;
+    gap: 5px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "galeria__header galeria__header galeria__header"
+    ". galeria__content ."
+    "galeria__footer galeria__footer galeria__footer";
+    height: 1200px;
+}
+
+.galeria__header { 
+    grid-area: galeria__header;
+    background-color: lawngreen;
+}
+
+.galeria__footer { 
+    grid-area: galeria__footer;
+    background-color: darkorange;
+}
+
+.galeria__content {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 12px 12px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "galeria__content--img1 galeria__content--img2 galeria__content--img2"
+    "galeria__content--img1 galeria__content--img3 galeria__content--img3"
+    "galeria__content--img4 galeria__content--img3 galeria__content--img3"
+    "galeria__content--img5 galeria__content--img5 galeria__content--img6"
+    "galeria__content--img5 galeria__content--img5 galeria__content--img6";
+    grid-area: galeria__content;
+}
+
+.galeria__content--img1 { 
+    grid-area: galeria__content--img1;
+    background-color: beige;
+}
+
+.galeria__content--img2 { 
+    grid-area: galeria__content--img2;
+    background-color: darkcyan;
+}
+
+.galeria__content--img3 { 
+    grid-area: galeria__content--img3;
+    background-color: chocolate;
+}
+
+.galeria__content--img4 { 
+    grid-area: galeria__content--img4;
+    background-color: darkblue;
+}
+
+.galeria__content--img5 { 
+    grid-area: galeria__content--img5;
+    background-color: deeppink;
+}
+
+.galeria__content--img6 { 
+    grid-area: galeria__content--img6;
+    background-color: indigo;
+}
+
+/* fin galeria */
+
+/* inicio articulos */
+
+.articulos__gridlayout {
+    display: grid;
+    grid-template-columns: 0.3fr 2.4fr 0.3fr;
+    grid-template-rows: 0.3fr 2.4fr 0.3fr;
+    gap: 5px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "articulos__header articulos__header articulos__header"
+    ". articulos__content ."
+    "articulos__footer articulos__footer articulos__footer";
+    height: 1200px;
+}
+
+.articulos__header {
+    background-color: crimson;
+    grid-area: articulos__header;
+}
+
+.articulos__content {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 25px 25px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "articulos__content--carta1 articulos__content--carta2 articulos__content--carta3 articulos__content--carta4"
+    "articulos__content--carta5 articulos__content--carta6 articulos__content--carta7 articulos__content--carta8"
+    "articulos__content--carta9 articulos__content--carta10 articulos__content--carta11 articulos__content--carta12";
+    grid-area: articulos__content;
+}
+
+.articulos__content--carta1 {
+    background-color: aliceblue;
+    grid-area: articulos__content--carta1;
+}
+
+.articulos__content--carta2 {
+    background-color: aliceblue;
+    grid-area: articulos__content--carta2;
+}
+
+.articulos__content--carta3 {
+    background-color: aliceblue;
+    grid-area: articulos__content--carta3;
+}
+
+.articulos__content--carta4 {
+    background-color: aliceblue;
+    grid-area: articulos__content--carta4;
+}
+
+.articulos__content--carta5 {
+    background-color: aliceblue;
+    grid-area: articulos__content--carta5;
+}
+
+.articulos__content--carta6 {
+    background-color: aliceblue;
+    grid-area: articulos__content--carta6;
+}
+
+.articulos__content--carta7 {
+    background-color: aliceblue;
+    grid-area: articulos__content--carta7;
+}
+
+.articulos__content--carta8 {
+    background-color: aliceblue;
+    grid-area: articulos__content--carta8;
+}
+
+.articulos__content--carta9 {
+    background-color: aliceblue;
+    grid-area: articulos__content--carta9;
+}
+
+.articulos__content--carta10 {
+    background-color: aliceblue;
+    grid-area: articulos__content--carta10
+}
+
+.articulos__content--carta11 {
+    background-color: aliceblue;
+    grid-area: articulos__content--carta11;
+}
+
+.articulos__content--carta12 {
+    background-color: aliceblue;
+    grid-area: articulos__content--carta12;
+}
+
+.articulos__footer {
+    background-color: darkblue;
+    grid-area: articulos__footer;
+}
+
+
+/* fin articulos */
