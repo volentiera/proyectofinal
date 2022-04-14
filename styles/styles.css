@@ -8,6 +8,11 @@
 /* fondo */
 .background{
     background-color: palegreen;
+    background-image: url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
 }
 /* fondo */
 
@@ -86,6 +91,36 @@
 .index__footer {
     background-color: lightslategrey;
     grid-area: index__footer;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    border-radius: 10px;
+
+}
+.subir{
+    background-color: rgb(68, 8, 181);
+	color: rgb(12, 197, 225) ;
+    flex-direction: flex-end;
+    border-radius: 50%;
+    width: 40px;
+	height: 40px;
+    text-align: center;
+    font-size: 25px;
+    line-height: 40px;
+    margin-right: 10px;
+}
+.facebook{
+    text-decoration: none;
+    color:#3b5998 ;
+}
+
+.insta{
+    text-decoration: none;
+    color: rgb(12, 197, 225) ;
+}
+.fa-whatsapp{
+    color: rgb(18, 140, 126);
 }
 
 /* fin index footer */
@@ -162,6 +197,7 @@
     grid-area: galeria__content--img6;
     background-color: indigo;
 }
+
 
 /* fin galeria */
 
