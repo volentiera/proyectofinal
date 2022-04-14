@@ -89,8 +89,8 @@
 /* inicio index footer */
 
 .index__footer {
-    background-color: lightslategrey;
     grid-area: index__footer;
+    background-color: lightslategrey;
     font-size: 50px;
     display: flex;
     align-items: center;
@@ -147,11 +147,42 @@
     grid-area: galeria__header;
     background-color: lawngreen;
 }
-
+/* inicio galeria footer */
 .galeria__footer { 
     grid-area: galeria__footer;
-    background-color: darkorange;
+    background-color: lightslategrey;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    border-radius: 10px;
 }
+.subir{
+    background-color: rgb(68, 8, 181);
+	color: rgb(12, 197, 225) ;
+    flex-direction: flex-end;
+    border-radius: 50%;
+    width: 40px;
+	height: 40px;
+    text-align: center;
+    font-size: 25px;
+    line-height: 40px;
+    margin-right: 10px;
+}
+.facebook{
+    text-decoration: none;
+    color:#3b5998 ;
+}
+
+.insta{
+    text-decoration: none;
+    color: rgb(12, 197, 225) ;
+}
+.fa-whatsapp{
+    color: rgb(18, 140, 126);
+}
+
+/* fin galeria footer */
 
 .galeria__content {  
     display: grid;
@@ -297,6 +328,37 @@
 .articulos__footer {
     background-color: darkblue;
     grid-area: articulos__footer;
+    background-color: lightslategrey;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    border-radius: 10px;
+}
+
+.subir{
+    background-color: rgb(68, 8, 181);
+	color: rgb(12, 197, 225) ;
+    flex-direction: flex-end;
+    border-radius: 50%;
+    width: 40px;
+	height: 40px;
+    text-align: center;
+    font-size: 25px;
+    line-height: 40px;
+    margin-right: 10px;
+}
+.facebook{
+    text-decoration: none;
+    color:#3b5998 ;
+}
+
+.insta{
+    text-decoration: none;
+    color: rgb(12, 197, 225) ;
+}
+.fa-whatsapp{
+    color: rgb(18, 140, 126);
 }
 
 
