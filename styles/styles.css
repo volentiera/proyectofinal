@@ -35,7 +35,42 @@
 
 .index__header { 
     grid-area: index__header;
-    background-color: black;
+    background-color: rgb(212, 30, 30);
+    display: flex;
+    font-size: 30px;
+    align-items: center;
+    justify-content:space-between;
+}
+.navegador{
+    padding-left: 5px;
+}
+
+.cambioletra{
+    text-decoration: none;
+    color: aqua;
+}
+.cart{
+    color: aqua;
+    padding-right: 5px;
+}
+.logoTitulo{
+    color: aqua;
+}
+#menu li a{
+    position: static;
+}
+ul{
+    list-style: none;
+}
+#menu>li>ul>li{
+    display: none;
+}
+#menu>li:hover>ul>li {
+    display: block;
+}
+
+li .cambioletra:hover{
+    color: black;
 }
 
 /* fin index header */
@@ -145,8 +180,13 @@
 
 .galeria__header { 
     grid-area: galeria__header;
-    background-color: lawngreen;
+    background-color: rgb(212, 30, 30);
+    display: flex;
+    font-size: 30px;
+    align-items: center;
+    justify-content:space-between;
 }
+
 /* inicio galeria footer */
 .galeria__footer { 
     grid-area: galeria__footer;
@@ -248,9 +288,14 @@
 }
 
 .articulos__header {
-    background-color: crimson;
     grid-area: articulos__header;
+    background-color: rgb(212, 30, 30);
+    display: flex;
+    font-size: 30px;
+    align-items: center;
+    justify-content:space-between;
 }
+
 
 .articulos__content {  
     display: grid;
