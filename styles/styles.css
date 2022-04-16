@@ -560,8 +560,18 @@ li .cambioletra:hover{
     .articulos__footer {
         height: 100%;
     }
+    .background{
+        height: 185vh;
+    }
 }
 /*fin responsive */
+
+/* animation */
+.articulos__content--carta1:hover , .articulos__content--carta2:hover, .articulos__content--carta3:hover ,.articulos__content--carta4:hover, .articulos__content--carta5:hover, .articulos__content--carta6:hover, .articulos__content--carta7:hover, .articulos__content--carta8:hover, .articulos__content--carta9:hover, .articulos__content--carta10:hover, .articulos__content--carta11:hover ,.articulos__content--carta12:hover{
+    transform: scale(125%);
+}
+/* animation */
+
 
 .articulos__content--carta1 {
     background-color: aliceblue;
