@@ -121,7 +121,7 @@ li .cambioletra:hover{
     .index__content {  
         display: grid;
         grid-template-columns: 2fr;
-        grid-template-rows: 0.8fr 1.2fr;
+        grid-template-rows: auto;
         gap: 16px 16px;
         grid-auto-flow: row;
         grid-template-areas:
@@ -133,7 +133,7 @@ li .cambioletra:hover{
     .index__content2 {  
         display: grid;
         grid-template-columns: 2fr;
-        grid-template-rows: 0.8fr 1.2fr;
+        grid-template-rows: auto;
         gap: 16px 16px;
         grid-auto-flow: row;
         grid-template-areas:
