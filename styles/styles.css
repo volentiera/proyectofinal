@@ -36,7 +36,7 @@
 
 .index__header { 
     grid-area: index__header;
-    background-color: rgb(212, 30, 30);
+    background-color: #150A3D;
     display: flex;
     font-size: 30px;
     align-items: center;
@@ -52,22 +52,22 @@
 }
 .cart{
     color: aqua;
-    padding-right: 5px;
+    padding-right: 25px;
 }
 .logoTitulo{
     color: aqua;
-}
-#menu li a{
-    position: static;
+    padding-right: 14%;
 }
 ul{
     list-style: none;
 }
-#menu>li>ul>li{
-    display: none;
+ul li {
+    display: inline-block;
+    padding: 5px;
 }
-#menu>li:hover>ul>li {
-    display: block;
+
+.lalala:hover{
+    background-color: #0089B3;
 }
 
 li .cambioletra:hover{
@@ -217,7 +217,7 @@ li .cambioletra:hover{
 
 .galeria__header { 
     grid-area: galeria__header;
-    background-color: rgb(212, 30, 30);
+    background-color: #150A3D;
     display: flex;
     font-size: 30px;
     align-items: center;
