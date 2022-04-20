@@ -34,6 +34,7 @@
 
 /* inicio index header */
 
+
 .index__header { 
     grid-area: index__header;
     background-image: radial-gradient(circle, #00487e, #0b386f, #11295f, #141a4e, #150a3d);
@@ -41,9 +42,12 @@
     font-size: 30px;
     align-items: center;
     justify-content:space-between;
+    flex-wrap: nowrap;
+    
 }
 .navegador{
     padding-left: 5px;
+    display: block;
 }
 
 .cambioletra{
@@ -56,23 +60,49 @@
 }
 .logoTitulo{
     color: aqua;
-    padding-right: 14%;
+    padding-right: 17%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 3px;
+    text-shadow: 3px 6px 6px black;
 }
 ul{
     list-style: none;
 }
 ul li {
-    display: inline-block;
+    display: inline-flex;
     padding: 5px;
+    text-shadow: 3px 6px 6px black;
 }
 
-.fondoMenu:hover{
-    background-color: #0089B3;
-}
 
 li .cambioletra:hover{
     color: black;
 }
+
+.fa-cart-arrow-down{
+    text-shadow: 3px 6px 6px black;
+}
+
+/* animaciones header */
+
+.fa-cart-arrow-down:hover{
+    transform: scale(125%);
+}
+.fondoMenu:hover{
+    background-color: #0089B3;
+    text-shadow:none;
+}
+
+/* responsive header */
+@media (max-width: 768px) {
+    ul li{
+        display: block;
+    }
+    .logoTitulo{
+        padding-right: 0%;
+    }
+}
+
 
 /* fin index header */
 
@@ -181,20 +211,38 @@ li .cambioletra:hover{
     font-size: 25px;
     line-height: 40px;
     margin-right: 10px;
+    border-color: rgb(12, 197, 225);
+    border-style: solid;
 }
+
 .facebook{
     text-decoration: none;
     color:#3b5998 ;
+    text-shadow: 3px 6px 6px black;
 }
-
 .insta{
     text-decoration: none;
     color: rgb(12, 197, 225) ;
+    text-shadow: 3px 6px 6px black;
 }
 .fa-whatsapp{
     color: rgb(18, 140, 126);
+    text-shadow: 3px 6px 6px black;
 }
+/* animaciones footer */
 
+.fa-instagram:hover{
+    transform: scale(125%);
+}
+.fa-whatsapp:hover{
+    transform: scale(125%);
+}
+.fa-facebook:hover{
+    transform: scale(125%);
+}
+.subir:hover{
+    transform: scale(125%);
+}
 /* fin index footer */
 
 /* fin index */
