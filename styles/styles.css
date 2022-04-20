@@ -36,7 +36,7 @@
 
 .index__header { 
     grid-area: index__header;
-    background-color: #150A3D;
+    background-image: radial-gradient(circle, #00487e, #0b386f, #11295f, #141a4e, #150a3d);
     display: flex;
     font-size: 30px;
     align-items: center;
@@ -66,7 +66,7 @@ ul li {
     padding: 5px;
 }
 
-.lalala:hover{
+.fondoMenu:hover{
     background-color: #0089B3;
 }
 
@@ -162,7 +162,7 @@ li .cambioletra:hover{
 
 .index__footer {
     grid-area: index__footer;
-    background-color: lightslategrey;
+    background-image: radial-gradient(circle, #00487e, #0b386f, #11295f, #141a4e, #150a3d);
     font-size: 50px;
     display: flex;
     align-items: center;
@@ -217,7 +217,7 @@ li .cambioletra:hover{
 
 .galeria__header { 
     grid-area: galeria__header;
-    background-color: #150A3D;
+    background-image: radial-gradient(circle, #00487e, #0b386f, #11295f, #141a4e, #150a3d);
     display: flex;
     font-size: 30px;
     align-items: center;
@@ -310,7 +310,7 @@ li .cambioletra:hover{
 /* inicio galeria footer */
 .galeria__footer { 
     grid-area: galeria__footer;
-    background-color: lightslategrey;
+    background-image: radial-gradient(circle, #00487e, #0b386f, #11295f, #141a4e, #150a3d);
     font-size: 50px;
     display: flex;
     align-items: center;
@@ -364,7 +364,7 @@ li .cambioletra:hover{
 
 .articulos__header {
     grid-area: articulos__header;
-    background-color: rgb(212, 30, 30);
+    background-image: radial-gradient(circle, #00487e, #0b386f, #11295f, #141a4e, #150a3d);
     display: flex;
     font-size: 30px;
     align-items: center;
@@ -634,9 +634,8 @@ li .cambioletra:hover{
 }
 
 .articulos__footer {
-    background-color: darkblue;
+    background-image: radial-gradient(circle, #00487e, #0b386f, #11295f, #141a4e, #150a3d);
     grid-area: articulos__footer;
-    background-color: lightslategrey;
     font-size: 50px;
     display: flex;
     align-items: center;
