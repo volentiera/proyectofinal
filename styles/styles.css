@@ -20,7 +20,7 @@
 .index__gridlayout {  
     display: grid;
     grid-template-columns: 0.3fr 2.4fr 0.3fr;
-    grid-template-rows: 0.4fr 1.6fr 1.6fr 0.4fr;
+    grid-template-rows: 150px auto auto 150px;
     gap: 5px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -112,14 +112,17 @@ li .cambioletra:hover{
 .index__content {  
     display: grid;
     grid-template-columns: 0.8fr 1.2fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: auto;
     gap: 16px 16px;
     grid-auto-flow: row;
     grid-template-areas:
     "index__content--texto index__content--video";
     grid-area: index__content;
 }
-
+.imagenIndex{
+    height: 100%;
+    width: 100%;
+}
 
 .index__content--video { 
     background-color: chartreuse;
@@ -131,14 +134,18 @@ li .cambioletra:hover{
 }
 
 .index__content--texto { 
-    background-color: darkmagenta;
+    background-image: radial-gradient(circle, #00487e, #0b386f, #11295f, #141a4e, #150a3d);
     grid-area: index__content--texto;
+    padding: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: aqua;
+    
 }
-
 .index__content2 {  
     display: grid;
     grid-template-columns: 1.2fr 0.8fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: auto;
     gap: 16px 16px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -183,8 +190,20 @@ li .cambioletra:hover{
 }
 
 .index__content2--texto {
-    background-color: lavender;
+    background-image: radial-gradient(circle, #00487e, #0b386f, #11295f, #141a4e, #150a3d);
     grid-area: index__content2--texto;
+    padding: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: aqua;
+}
+.imagenIndex2{
+    height: 50%;
+    width: 100%;
+}
+
+.imagenIndex2:hover{
+    transform: scale(125%);
 }
 
 /* fin index content */
@@ -254,7 +273,7 @@ li .cambioletra:hover{
 .galeria__gridlayout {  
     display: grid;
     grid-template-columns: 0.3fr 2.4fr 0.3fr;
-    grid-template-rows: 0.3fr 2.4fr 0.3fr;
+    grid-template-rows: 150px auto 150px;
     gap: 5px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -278,7 +297,7 @@ li .cambioletra:hover{
 .galeria__content {  
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
     gap: 12px 12px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -295,7 +314,7 @@ li .cambioletra:hover{
     .galeria__content {  
         display: grid;
         grid-template-columns: 2fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
         gap: 12px 12px;
         grid-auto-flow: row;
         grid-template-areas:
@@ -326,32 +345,44 @@ li .cambioletra:hover{
 
 .galeria__content--img1 { 
     grid-area: galeria__content--img1;
-    background-color: beige;
+    background-image: url(../img/imagentienda.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .galeria__content--img2 { 
     grid-area: galeria__content--img2;
-    background-color: darkcyan;
+    background-image: url(../img/imagentienda2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .galeria__content--img3 { 
     grid-area: galeria__content--img3;
-    background-color: chocolate;
+    background-image: url(../img/imagentienda.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .galeria__content--img4 { 
     grid-area: galeria__content--img4;
-    background-color: darkblue;
+    background-image: url(../img/imagentienda2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .galeria__content--img5 { 
     grid-area: galeria__content--img5;
-    background-color: deeppink;
+    background-image: url(../img/imagentienda.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .galeria__content--img6 { 
     grid-area: galeria__content--img6;
-    background-color: indigo;
+    background-image: url(../img/imagentienda2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* fin galeria content */
@@ -401,7 +432,7 @@ li .cambioletra:hover{
 .articulos__gridlayout {
     display: grid;
     grid-template-columns: 0.3fr 2.4fr 0.3fr;
-    grid-template-rows: 0.3fr 2.4fr 0.3fr;
+    grid-template-rows: 150px auto 150px;
     gap: 5px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -508,7 +539,7 @@ li .cambioletra:hover{
     .articulos__content {  
         display: grid;
         grid-template-columns: 4fr;
-        grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
+        grid-template-rows: auto;
         gap: 10px 10px;
         grid-auto-flow: row;
         grid-template-areas:
