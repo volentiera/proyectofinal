@@ -72,6 +72,7 @@ ul li {
     display: inline-flex;
     padding: 5px;
     text-shadow: 3px 6px 6px black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 
@@ -407,7 +408,8 @@ li .cambioletra:hover{
     "articulos__header articulos__header articulos__header"
     ". articulos__content ."
     "articulos__footer articulos__footer articulos__footer";
-    height: 1200px;
+    height: auto;
+    
 }
 
 .articulos__header {
@@ -423,7 +425,7 @@ li .cambioletra:hover{
 .articulos__content {  
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: auto;
     gap: 25px 25px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -431,24 +433,46 @@ li .cambioletra:hover{
     "articulos__content--carta5 articulos__content--carta6 articulos__content--carta7 articulos__content--carta8"
     "articulos__content--carta9 articulos__content--carta10 articulos__content--carta11 articulos__content--carta12";
     grid-area: articulos__content;
+    
+}
+
+.articulos__content--carta1,.articulos__content--carta2,.articulos__content--carta3,.articulos__content--carta4,.articulos__content--carta5,.articulos__content--carta6,.articulos__content--carta7,.articulos__content--carta8,.articulos__content--carta9,.articulos__content--carta10,.articulos__content--carta11,.articulos__content--carta12{
+    border-radius: 2%;
+    border-color: black;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.articulos__content--carta1--img,.articulos__content--carta2--img,.articulos__content--carta3--img,.articulos__content--carta4--img,.articulos__content--carta5--img,.articulos__content--carta6--img,.articulos__content--carta7--img,.articulos__content--carta8--img,.articulos__content--carta9--img,.articulos__content--carta10--img,.articulos__content--carta11--img,.articulos__content--carta12--img{
+    height: 75%;
+    width: 100%;
+}
+.articulos__content--carta1--texto,.articulos__content--carta2--texto,.articulos__content--carta3--texto,.articulos__content--carta4--texto,.articulos__content--carta5--texto,.articulos__content--carta6--texto,.articulos__content--carta7--texto,.articulos__content--carta8--texto,.articulos__content--carta9--texto,.articulos__content--carta10--texto,.articulos__content--carta11--texto,.articulos__content--carta12--texto{
+    height: 25%;
+    width: 100%;
+    text-align: center;
+    
+}
+.articulos__content--carta1--texto2,.articulos__content--carta2--texto2,.articulos__content--carta3--texto2,.articulos__content--carta4--texto2,.articulos__content--carta5--texto2,.articulos__content--carta6--texto2,.articulos__content--carta7--texto2,.articulos__content--carta8--texto2,.articulos__content--carta9--texto2,.articulos__content--carta10--texto2,.articulos__content--carta11--texto2,.articulos__content--carta12--texto2{
+    text-align: justify;
+    
+    
+}
+.articulo1,.articulo2,.articulo3,.articulo4,.articulo5,.articulo6,.articulo7,.articulo8,.articulo9,.articulo10,.articulo11,.articulo12{
+    width: 100%;
+    height: 100%;
 }
 
 /* responsive */
-@media (min-width: 992px){
-    .articulos__footer {
-        height: 100%;
-    }
 
-    .background{
-        height:100%;
-    }
-}
 
 @media (min-width: 576px) and (max-width: 992px){
     .articulos__content {  
         display: grid;
         grid-template-columns: 1.3fr 1.3fr 1.3fr;
-        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+        grid-template-rows: auto;
         gap: 25px 25px;
         grid-auto-flow: row;
         grid-template-areas:
@@ -459,22 +483,15 @@ li .cambioletra:hover{
         grid-area: articulos__content;
         
     }
-    .articulos__footer {
-        height: 100%;
-    }
-
-    .background{
-        height:100%;
-    }
 
 }
 
 @media (max-width: 576px){
     .articulos__content {  
         display: grid;
-        grid-template-columns: 2fr 2fr;
-        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
-        gap: 25px 25px;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        gap: 10px 10px;
         grid-auto-flow: row;
         grid-template-areas:
         "articulos__content--carta1 articulos__content--carta2"
@@ -484,16 +501,7 @@ li .cambioletra:hover{
         "articulos__content--carta9 articulos__content--carta10"
         "articulos__content--carta11 articulos__content--carta12";
         grid-area: articulos__content;
-        
     }
-    .articulos__footer {
-        height: 100%;
-    }
-
-    .background{
-        height:100%;
-    }
-
 }
 
 @media (max-width: 350px){
@@ -519,97 +527,8 @@ li .cambioletra:hover{
         grid-area: articulos__content;
         
     }
-    
-.articulos__content--carta1 {
-    background-color: aliceblue;
-    grid-area: articulos__content--carta1;
-    height: 150px;
-    width: 100%;
-}
-
-.articulos__content--carta2 {
-    background-color: aliceblue;
-    grid-area: articulos__content--carta2;
-    height: 150px;
-    width: 100%;
-}
-
-.articulos__content--carta3 {
-    background-color: aliceblue;
-    grid-area: articulos__content--carta3;
-    height: 150px;
-    width: 100%;
-}
-
-.articulos__content--carta4 {
-    background-color: aliceblue;
-    grid-area: articulos__content--carta4;
-    height: 150px;
-    width: 100%;
-}
-
-.articulos__content--carta5 {
-    background-color: aliceblue;
-    grid-area: articulos__content--carta5;
-    height: 150px;
-    width: 100%;
-}
-
-.articulos__content--carta6 {
-    background-color: aliceblue;
-    grid-area: articulos__content--carta6;
-    height: 150px;
-    width: 100%;
-}
-
-.articulos__content--carta7 {
-    background-color: aliceblue;
-    grid-area: articulos__content--carta7;
-    height: 150px;
-    width: 100%;
-}
-
-.articulos__content--carta8 {
-    background-color: aliceblue;
-    grid-area: articulos__content--carta8;
-    height: 150px;
-    width: 100%;
-}
-
-.articulos__content--carta9 {
-    background-color: aliceblue;
-    grid-area: articulos__content--carta9;
-    height: 150px;
-    width: 100%;
-    
-}
-
-.articulos__content--carta10 {
-    background-color: aliceblue;
-    grid-area: articulos__content--carta10;
-    height: 150px;
-    width: 100%;
-}
-
-.articulos__content--carta11 {
-    background-color: aliceblue;
-    grid-area: articulos__content--carta11;
-    height: 150px;
-    width: 100%;
-}
-
-.articulos__content--carta12 {
-    background-color: aliceblue;
-    grid-area: articulos__content--carta12;
-    height: 150px;
-    width: 100%;
-}
-
-    .articulos__footer {
-        height: 100%;
-    }
-    .background{
-        height: 185vh;
+    .articulos__footer{
+        height: auto;
     }
 }
 /*fin responsive */
@@ -624,61 +543,73 @@ li .cambioletra:hover{
 .articulos__content--carta1 {
     background-color: aliceblue;
     grid-area: articulos__content--carta1;
+    height: auto;
 }
 
 .articulos__content--carta2 {
     background-color: aliceblue;
     grid-area: articulos__content--carta2;
+    height: auto;
 }
 
 .articulos__content--carta3 {
     background-color: aliceblue;
     grid-area: articulos__content--carta3;
+    height: auto;
 }
 
 .articulos__content--carta4 {
     background-color: aliceblue;
     grid-area: articulos__content--carta4;
+    height: auto;
 }
 
 .articulos__content--carta5 {
     background-color: aliceblue;
     grid-area: articulos__content--carta5;
+    height: auto;
 }
 
 .articulos__content--carta6 {
     background-color: aliceblue;
     grid-area: articulos__content--carta6;
+    height: auto;
 }
 
 .articulos__content--carta7 {
     background-color: aliceblue;
     grid-area: articulos__content--carta7;
+    height: auto;
 }
 
 .articulos__content--carta8 {
     background-color: aliceblue;
     grid-area: articulos__content--carta8;
+    height: auto;
 }
 
 .articulos__content--carta9 {
     background-color: aliceblue;
     grid-area: articulos__content--carta9;
+    height: auto;
 }
 
 .articulos__content--carta10 {
     background-color: aliceblue;
-    grid-area: articulos__content--carta10
+    grid-area: articulos__content--carta10;
+    height: auto;
 }
 
 .articulos__content--carta11 {
     background-color: aliceblue;
     grid-area: articulos__content--carta11;
+    height: auto;
 }
 
 .articulos__content--carta12 {
     background-color: aliceblue;
     grid-area: articulos__content--carta12;
+    height: auto;
 }
 
 .articulos__footer {
@@ -689,6 +620,7 @@ li .cambioletra:hover{
     align-items: center;
     justify-content:space-between;
     border-radius: 10px;
+    height: 100%;
 }
 
 .subir{
